@@ -7,10 +7,27 @@ body {
   max-width: 1200px;
   margin: auto;
   padding: 3em;
+  display: flex;
 }
 
-.faceList {
-  /* Add flex and styles here */
+@media screen and (min-width: 320px) and (max-width: 799px) {
+  .faceList {
+    /* Add flex and styles here */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .faceList {
+    /* Add flex and styles here */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-right: 5%;
+  }
 }
 
 .face {
@@ -24,6 +41,8 @@ body {
   /* The images should scale with the window, so this uses vw (view width)*/
   height: 35vw;
   width: 35vw;
+  max-width: 150px;
+  max-height: 150px;
 }
 
 .face h5 {
@@ -37,3 +56,14 @@ body {
 }
 
 /*  Put your CSS Here */
+
+.ourTeam {
+  width: 60%;
+  text-align: left;
+  max-width: 630px;
+}
+
+.ourStory {
+  max-width: 35%;
+  text-align: left;
+}
